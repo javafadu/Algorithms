@@ -1,0 +1,10 @@
+
+
+**Time Complexity** :
+The time required for an algorithm to run.
+under same conditions, same technical environment
+transaction cycle is considered as time
+
+
+**BigO Notation (O(n))** :
+It is calculated for time complexity of an algorithm
