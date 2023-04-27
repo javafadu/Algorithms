@@ -1,0 +1,9 @@
+
+
+Logic :
+1- pick up any element in the given array
+2- Locate bigger elements on the right side
+3- Locate smaller elements on the left side
+4- pick up new pivot element on the right side and do 2 and 3 steps
+5- pick up new pivot element on the left side and do 2 and 3 steps
+6- recursive ....
