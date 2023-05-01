@@ -1,0 +1,12 @@
+
+
+Logic :
+1- pick up  pivot element in the given array
+2- Locate bigger elements on the right side
+3- Locate smaller elements on the left side
+4- pick up new pivot element on the right side and do 2 and 3 steps
+5- pick up new pivot element on the left side and do 2 and 3 steps
+6- recursive ....
+
+Time Complexity : worst case->O(n^2) , average case-> O(n log n)
+Memory Usage : worst case-> O(n) ---> recursive
