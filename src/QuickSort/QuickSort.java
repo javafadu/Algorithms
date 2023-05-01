@@ -11,7 +11,7 @@ public class QuickSort {
     }
 
     public static int partition(int[] arr, int first, int last ) {
-        // set pivot element (we choose last element as pivot)
+        // set pivot element (we choose the last element as pivot)
         int pivot = arr[last];
         int i = first-1; // start with index of first element
 
