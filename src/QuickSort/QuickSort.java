@@ -2,6 +2,8 @@ package QuickSort;
 
 public class QuickSort {
 
+    // first: first element index
+    // last: last element index
     public static void quickSort(int[] arr, int first, int last) {
         if(first<last) {
             int pivot = partition(arr, first, last);
