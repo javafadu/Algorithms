@@ -1,0 +1,11 @@
+
+
+* Divide the array to 2 parts
+* left side numbers may equal with right side or left side has 1 more element
+(3-3 or 4-3 or 5-5 or 6-5)
+* Step1: get each element as separated by iteration
+* Step2: get from lowest to highest element between two couples and merge them
+* Step3: get from lowest to highest element between above merged arrays.
+
+Time Complexity : O(n log n)
+Memory Usage : worst case-> O(n) ---> recursive
