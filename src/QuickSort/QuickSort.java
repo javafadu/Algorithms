@@ -2,38 +2,36 @@ package QuickSort;
 
 public class QuickSort {
 
-    // first: first element index
-    // last: last element index
-    public static void quickSort(int[] arr, int first, int last) {
-        if(first<last) {
-            int pivot = partition(arr, first, last);
-            quickSort(arr,first,last-1); // recursive for left side
-            quickSort(arr,pivot+1,last);
+    // begin: first element index
+    // end: last element index
+    public static void quickSort(int arr[], int begin, int end) {
+        if (begin < end) {
+            int partitionIndex = partition(arr, begin, end);
+
+            quickSort(arr, begin, partitionIndex-1);
+            quickSort(arr, partitionIndex+1, end);
         }
     }
 
-    public static int partition(int[] arr, int first, int last ) {
-        // set pivot element (we choose the last element as pivot)
-        int pivot = arr[last];
-        int i = first-1; // start with index of first element
+    public static int partition(int arr[], int begin, int end) {
+        int pivot = arr[end]; // pivot element
+        int i = (begin-1);
 
-        // relocation in the first iteration
-        for (int j = first; j < last ; j++) {
-            if(arr[j]<=pivot) {
-                i++;
-                int temp = arr[i];
+        for (int j = begin; j < end; j++) {
+            if (arr[j] <= pivot) {  // If current element is smaller than the pivot
+                i++; // increment index of smaller element
+
+                int swapTemp = arr[i];
                 arr[i] = arr[j];
-                arr[j] = temp;
+                arr[j] = swapTemp;
             }
         }
 
-        int temp = arr[i+1];
-        arr[i+1] = arr[last];
-        arr[last] = temp;
-
+        int swapTemp = arr[i+1];
+        arr[i+1] = arr[end];
+        arr[end] = swapTemp;
 
         return i+1;
-
     }
 
 

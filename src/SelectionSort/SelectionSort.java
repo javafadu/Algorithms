@@ -3,7 +3,7 @@ package SelectionSort;
 public class SelectionSort {
 
     public static void selectionSort(int[] arr) {
-        int count = 0;
+        // int count = 0;
         int min; // the smallest index of following elements
 
         for (int i = 0; i < arr.length ; i++) {
@@ -12,14 +12,14 @@ public class SelectionSort {
                 if(arr[j]<arr[min]) {
                     min=j;
                 }
-                count++;
+              //  count++;
             }
             // swap
             int temp = arr[i];
             arr[i] = arr[min];
             arr[min] = temp;
         }
-        System.out.println("Count : "+count);
+        // System.out.println("Count : "+count);
     }
 
 }
