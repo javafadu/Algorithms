@@ -1,7 +1,0 @@
-
-
-Trick: if we have short array, it can work well but
-for long arrays it takes so much time and time complexity ends to n^2
-
-Time Complexity: O(n^2)
-Memory Usage: O(1) -> only 1 temp
